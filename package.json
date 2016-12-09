@@ -1,0 +1,29 @@
+{
+  "name": "handler-of-traffic-rules",
+  "version": "1.0.0",
+  "description": "Handler of traffic rules Node.js + PostgreSQL",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "body-parser": "*",
+    "consolidate": "*",
+    "dust": "*",
+    "dustjs-helpers": "*",
+    "dustjs-linkedin": "*",
+    "express": "*",
+    "pg": "*",
+    "path": "^0.12.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DemyanchikVadim/handler-of-traffic-rules.git"
+  },
+  "author": "Vadim Demyanchik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DemyanchikVadim/handler-of-traffic-rules/issues"
+  },
+  "homepage": "https://github.com/DemyanchikVadim/handler-of-traffic-rules#readme"
+}

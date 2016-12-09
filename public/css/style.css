@@ -1,0 +1,25 @@
+body {
+	background: #e8e5e5;
+}
+
+.navbar-default {
+	background: rgb(51, 122, 183);
+}
+.navbar-default  ul li a{
+	color: #fff;
+}
+.navbar-default  ul li a:hover{
+	background: #fff;
+}
+.navbar-default  .navbar-brand{
+	color: #fff;
+}
+
+.navbar-default .navbar-nav > li > a {
+	color: #fff;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    color: #fff;
+    background-color: #077de2;
+}

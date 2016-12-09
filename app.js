@@ -52,6 +52,30 @@ app.post('/add', function(req, res){
     });
 });
 
+app.delete('/delete/:id', function(req,res){
+    pg.connect(connect, function(err, client, done){
+        if(err){
+            return console.log('error fetching client from pool', err);
+        }
+        client.query("DELETE FROM reports WHERE id = $1", [req.params.id]);
+
+        done();
+        res.send(200);
+    });
+});
+
+app.post('/edit', function(req,res){
+    pg.connect(connect, function(err, client, done){
+        if(err){
+            return console.log('error fetching client from pool', err);
+        }
+        client.query("UPDATE reports SET street=$1, numbercar=$2, description=$3 WHERE id = $4", [req.body.street, req.body.numbercar, req.body.description, req.body.id]);
+
+        done();
+        res.redirect('/');
+    });
+});
+
 app.listen(3000, function () {
     console.log('server start on port 3000');
 });
